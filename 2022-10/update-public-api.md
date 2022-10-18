@@ -1,0 +1,3 @@
+ok, so we need to add a new graphql endpoint requesti18n. This will essentially be the same as the requestContent query. you can see here amplify/backend/api/fluentcdevpublicapi/schema.graphql
+You will need to update this file to add the query. After that you will need to create the lambda function
+amplify add function . this will add a directory in amplify/backend/function with the new function name. Copy the fluentcLogRequestPublic/src/index.js file to the new function and up date the return to be the content in the i18n format that nextjs is expecting
